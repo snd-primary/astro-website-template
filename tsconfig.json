@@ -1,0 +1,19 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "module": "ESNext",
+    "lib": ["es2020", "dom"],
+    "strict": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "rootDir": "./",
+    "baseUrl": "./",
+    "paths": {
+      "@components": ["src/components/index"],
+      "@styles/*": ["src/styles/index"]
+    },
+    "noPropertyAccessFromIndexSignature": true
+  }
+}
